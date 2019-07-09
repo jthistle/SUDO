@@ -7,7 +7,7 @@ IFS_=${IFS}
 IFS=":" read -ra PATHS <<< "$PATH"
 
 for i in "${PATHS[@]}"; do
-	for j in $( ls $i ); do
+	for j in $( ls "$i" ); do
 		alias ${j^^}="sudo $j"		
 	done
 done
