@@ -3,7 +3,7 @@ Order bash to do things by shouting.
 
 ## How-to
 
-Typing `sudo chmod +x foo.sh` is so boring, isn't it? You really want to `chown` that file, so let bash know about it. Be assertive:
+Typing `sudo chmod +x foo.sh` is so boring, isn't it? You really want to `chmod` that file, so let bash know about it. Be assertive:
 
 	CHMOD +x foo.sh
 
