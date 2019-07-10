@@ -11,15 +11,15 @@ function deleteOld {
 	if [ $( grep "SUDO - shout at bash" "$RCFILE" | wc -l ) -eq 0 ]; then
 	       	echo "No current installation found"
 		return
-        fi	       
-	
+        fi
+
 	cp "$RCFILE" "$RCFILE.old"
 
-	# Check for old versions	
+	# Check for old versions
 	if [ $( grep "end SUDO" "$RCFILE" | wc -l ) -eq 0 ]; then
 		compatDelete
 		exit 0
-	fi	
+	fi
 
 	echo "Searching for recent installation..."
 
@@ -38,7 +38,7 @@ function deleteOld {
 	    }
 	}
 	f==0{print > rcfile}
-	' "$RCFILE" 
+	' "$RCFILE"
 }
 
 deleteOld
@@ -47,7 +47,7 @@ echo "Installing..."
 
 cat ./SUDO >> "$RCFILE"
 echo '
-Now run:      source ' $RCFILE ' 
+Now run:      source ' $RCFILE '
 '
 
 exit 0
