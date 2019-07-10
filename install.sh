@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-RCFILE=~/.bashrc
+RCFILE=$HOME/.bashrc
 
 function compatDelete {
 	echo "You have an older version of SUDO present. Please remove it from $RCFILE to be able to update to the new version."
