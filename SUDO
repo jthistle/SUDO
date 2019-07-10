@@ -8,11 +8,13 @@ IFS=":" read -ra PATHS <<< "$PATH"
 
 for i in "${PATHS[@]}"; do
 	for j in $( ls "$i" ); do
-		if [ ${j^^} != $j ]; then
+		if [ ${j^^} != $j ] && [ $j != "sudo" ]; then
 			alias ${j^^}="sudo $j"
 		fi		
 	done
 done
+
+alias SUDO='sudo $(history -p !!)'
 
 IFS=${IFS_}
 
