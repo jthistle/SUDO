@@ -11,9 +11,9 @@ That way, bash knows you mean business. Plus, you save yourself two keypresses i
 
 ## Installation
 
-Run `install.sh`, follow instructions.
+Run `install.sh`, follow instructions. Running this script will also allow you to update to new versions.
 
-Note: this will append to your `~/.bashrc`.
+Note: this will append to your `~/.bashrc`. A backup of your `~/.bashrc` is kept at `~/.bashrc.old` if anything goes catastrophically wrong.
 
 Warning: never run scripts without checking them and being certain that they are not malicious.
 
