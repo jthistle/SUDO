@@ -12,7 +12,15 @@ That way, bash knows you mean business. Plus, you save yourself three keypresses
 ### Other features
 
 You can ~yell~ type `SUDO` to get bash to run the last command you wrote with sudo prefixed. After all, forgetting sudo can be very frustrating;
-you need to let your anger out somehow.
+you need to let your anger out somehow. A typical usage looks like this:
+
+	$ mkdir /bar
+	mkdir: cannot create directory ‘/bar’: Permission denied
+	$ SUDO
+	[sudo] password for user: 
+	$ /bar
+	bash: /bar: Is a directory
+	$ :)
 
 ## Installation
 
