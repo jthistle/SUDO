@@ -7,13 +7,16 @@ function compatDelete {
 	exit 0
 }
 
+function backupOld {
+	echo "Creating a backup of $RCFILE..."
+	cp "$RCFILE" "$RCFILE.old"
+}
+
 function deleteOld {
 	if [ $( grep "SUDO - shout at bash" "$RCFILE" | wc -l ) -eq 0 ]; then
-	       	echo "No current installation found"
+	    echo "No current installation found"
 		return
-        fi
-
-	cp "$RCFILE" "$RCFILE.old"
+    fi
 
 	# Check for old versions
 	if [ $( grep "end SUDO" "$RCFILE" | wc -l ) -eq 0 ]; then
@@ -40,6 +43,9 @@ function deleteOld {
 	f==0{print > rcfile}
 	' "$RCFILE"
 }
+
+# always create a backup
+backupOld
 
 deleteOld
 
