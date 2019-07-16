@@ -24,7 +24,7 @@ you need to let your anger out somehow. A typical usage looks like this:
 
 ## Installation
 
-Run `install.sh`, follow instructions. Running this script will also allow you to update to new versions.
+Run `install.py`, follow instructions (requires Python 3). Running this script will also allow you to update to new versions.
 
 Note: this will append to your `~/.bashrc`. A backup of your `~/.bashrc` is kept at `~/.bashrc.old` if anything goes catastrophically wrong.
 
