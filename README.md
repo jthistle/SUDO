@@ -32,6 +32,6 @@ Warning: never run scripts without checking them and being certain that they are
 
 ## Acknowledgements
 
-Thanks to [@rpprrodger](https://github.com/rpprrodger) for the idea. I just implemented the idea, badly.
+Thanks to [@rpprroger](https://github.com/rpprroger) for the idea. I just implemented the idea, badly.
 
   
