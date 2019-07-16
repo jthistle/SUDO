@@ -30,3 +30,8 @@ Note: this will append to your `~/.bashrc`. A backup of your `~/.bashrc` is kept
 
 Warning: never run scripts without checking them and being certain that they are not malicious.
 
+## Acknowledgements
+
+Thanks to @rpprrodger (GitHub) for the idea. I just implemented the idea, badly.
+
+  
